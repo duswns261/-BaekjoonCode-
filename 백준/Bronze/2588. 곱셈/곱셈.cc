@@ -4,20 +4,11 @@
 int main()
 {
     int a, b;
-	int c, d, e;
-	int f, g, h;
-	scanf("%d", &a);
-	scanf("%d", &b);
-	c = b / 100;
-	f = a*c;
-	d = b - (c * 100);
-	d /= 10;
-	g = a*d;
-	e = b - (c * 100) - (d * 10);
-	h = a*e;
-	printf("%d\n", h);
-	printf("%d\n", g);
-	printf("%d\n", f);
+    scanf("%d", &a);
+    scanf("%d", &b);
+    printf("%d\n", a*(b%10));
+    printf("%d\n", a*((b%100)/10));
+    printf("%d\n", a*(b/100));
 	printf("%d\n", a*b);
 	return 0;
 }

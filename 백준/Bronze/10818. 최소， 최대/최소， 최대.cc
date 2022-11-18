@@ -12,7 +12,8 @@ int main()
         scanf("%d", &nNum);
         vA.push_back(nNum);
     }
-    printf("%d %d", *min_element(vA.begin(), vA.end()), 
-           *max_element(vA.begin(), vA.end()));
+    int min = *min_element(vA.begin(), vA.end());
+    int max = *max_element(vA.begin(), vA.end());
+    printf("%d %d", min, max);
     return 0;
 }

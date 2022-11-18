@@ -9,7 +9,7 @@ int main()
     scanf("%d", &nCnt);
     for (int i = 0; i < nCnt; i++)
     {
-        scanf("%d ", &nNum);
+        scanf("%d", &nNum);
         vA.push_back(nNum);
     }
     printf("%d %d", *min_element(vA.begin(), vA.end()), 

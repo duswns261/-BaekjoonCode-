@@ -34,8 +34,6 @@ int main() {
     }
     if (nMaxCnt > 1) printf("?");
     else printf("%c\n", nMaxVal + 'A');
-    
-    
-        
+  
     return 0;
 }
